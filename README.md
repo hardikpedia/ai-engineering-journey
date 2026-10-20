@@ -39,7 +39,8 @@ Every module folder has the same shape:
 
 ```text
 module-N-name/
-├── README.md        # commands for this module
+├── README.md        # start here: study guide, unit table, commands
+├── theory/          # one lesson page per unit (the theory)
 ├── pyproject.toml   # its own pinned dependencies (each module is independent)
 ├── lessons/         # runnable example per unit
 ├── exercises/       # TODO functions - make the tests pass
@@ -48,7 +49,7 @@ module-N-name/
 └── project/         # the module project (own tests)
 ```
 
-Loop: read the lesson doc → run `lessons/` → solve `exercises/` → build `project/` → get it reviewed → quiz → tick the tracker.
+Loop: read `theory/` → run `lessons/` → solve `exercises/` → build `project/` → get it reviewed → quiz → tick the tracker.
 
 ```bash
 uv run pytest -k ex03          # one unit
